@@ -1,0 +1,24 @@
+---
+import Layout from "./Layout.astro";
+
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{
+
+    title: string;
+    month: string;
+    description: string;
+}>;
+
+const { frontmatter, url } = Astro.props;
+
+---
+
+<Layout title={frontmatter.title}>
+    <div class="prose prose p-6">
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.month}</h2>
+        <slot />
+    </div>
+    <div class="divider"></div>
+</Layout>

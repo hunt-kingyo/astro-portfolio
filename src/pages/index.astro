@@ -1,39 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Abstract from '../components/abstract.astro';
-
-interface Post {
-	url: string;
-	frontmatter: {
-		title:string;
-		description: string;
-	};
-}
-
-const posts: Post[] = Object.values(await import.meta.glob('./posts/*.md', { eager: true }))
-  .map((post: any) => ({
-    url: post.url,
-    frontmatter: post.frontmatter
-  }));
+import Abstract from '../components/Abstract.astro';
+import Works from '../components/Works.astro';
 
 ---
 
-<Layout>
+<Layout title='hunt-kingyo'>
 	<Abstract />
-	<h1  class="prose lg:prose-xl">ポートフォリオ</h1>
-	<button class="btn primary">Hello!</button>
-
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-		{posts.map((post) => (
-		  <div class="card bg-base-100 shadow-xl">
-			<div class="card-body">
-			  <h2 class="card-title">{post.frontmatter.title}</h2>
-			  <p>{post.frontmatter.description}</p>
-			  <div class="card-actions justify-end">
-				<a href={post.url} class="btn btn-primary">詳細を見る</a>
-			  </div>
-			</div>
-		  </div>
-		))}
-	  </div>
+	<div class="divider"></div>
+	<Works />
+	<div class="divider"></div>
 </Layout>

@@ -1,0 +1,30 @@
+---
+interface Post {
+	url: string;
+	frontmatter: {
+		title:string;
+		month:string;
+		description: string;
+	};
+}
+
+const posts: Post[] = Object.values(await import.meta.glob('../pages/works/*.md', { eager: true }))
+  .map((post: any) => ({
+    url: post.url,
+    frontmatter: post.frontmatter
+  }));
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {posts.map((post) => (
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">{post.frontmatter.title}</h2>
+          <p>{post.frontmatter.month + " | "}{post.frontmatter.description}</p>
+          <div class="card-actions justify-end">
+            <a href={post.url} class="btn btn-primary">詳細を見る</a>
+          </div>
+        </div>
+      </div>
+    ))}
+</div>
