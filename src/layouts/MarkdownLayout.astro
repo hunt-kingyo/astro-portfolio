@@ -6,7 +6,8 @@ import type { MarkdownLayoutProps } from "astro";
 type Props = MarkdownLayoutProps<{
 
     title: string;
-    month: string;
+    from: string;
+    to:string;
     description: string;
 }>;
 
@@ -17,8 +18,9 @@ const { frontmatter, url } = Astro.props;
 <Layout title={frontmatter.title}>
     <div class="prose prose p-6">
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.month}</h2>
+        <h3 class="mb-6">{frontmatter.from +  (frontmatter.to? " - " + frontmatter.to : "") + " | "}{frontmatter.description}</h3>
         <slot />
+        <a href="/" class="btn btn-primary mt-10">戻る</a>
     </div>
     <div class="divider"></div>
 </Layout>
