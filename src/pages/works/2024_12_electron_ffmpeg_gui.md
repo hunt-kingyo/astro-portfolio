@@ -9,7 +9,7 @@ description: "ソフトウェア開発"
 
 ElectronやReact、FFmpegを用いて動画のコーデックを変換するソフトウェアを開発しました。
 
-![開発したソフトウェア](../../assets/app_image.png)
+![開発したソフトウェア](/assets/app_image.jpg)
 
 ## ソースコード
 
