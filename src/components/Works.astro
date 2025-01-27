@@ -10,7 +10,7 @@ interface Post {
 }
 //.reverse()で配列を逆順にして新しい順に表示している
 //将来的には並び変え等ができるとなおよい
-const posts: Post[] = Object.values(await import.meta.glob('../pages/works/*.md', { eager: true }))
+const posts: Post[] = Object.values(import.meta.glob('../pages/works/*.md', { eager: true }))
   .reverse()
   .map((post: any) => ({
     url: post.url,

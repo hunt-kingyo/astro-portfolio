@@ -47,4 +47,3 @@ Adobe Illustratorを使用して制作しました。
 
 ## 参考リンク
 - 筑波大学学園祭「雙峰祭」公式サイト: https://sohosai.com/
-- 
