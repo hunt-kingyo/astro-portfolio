@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "第50回雙峰祭ダイジェスト"
+title: "筑波大学 第50回雙峰祭ダイジェスト"
 from: "2024/10"
 to: "2024/11"
 description: "映像制作"
