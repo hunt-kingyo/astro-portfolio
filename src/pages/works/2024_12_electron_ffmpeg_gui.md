@@ -13,9 +13,10 @@ ElectronやReact、FFmpegを用いて動画のコーデックを変換するソ�
 
 ## ソースコード
 
-https://github.com/hunt-kingyo/electron-ffmpeg-gui
+<https://github.com/hunt-kingyo/electron-ffmpeg-gui>
 
 ## 主な機能
+
 - 複数ファイルの選択・エンコード
 - コーデックの選択
 - コーデックごとのオプションの指定
@@ -25,6 +26,7 @@ https://github.com/hunt-kingyo/electron-ffmpeg-gui
 - 実行中のログの表示する
 
 ## 技術スタック
+
 - 言語：TypeScript
 - フレームワーク：Electron
 - フロントエンドライブラリ：React, Material UI
