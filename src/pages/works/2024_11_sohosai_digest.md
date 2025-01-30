@@ -1,17 +1,25 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "第50回雙峰祭ダイジェスト"
+title: "筑波大学 第50回雙峰祭ダイジェスト"
 from: "2024/10"
 to: "2024/11"
 description: "映像制作"
 ---
+<style>
+    iframe.youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+</style>
+
 ## 概要
 
 筑波大学学園祭実行委員会 情報メディアシステム局として、第50回筑波大学学園祭「雙峰祭」のダイジェスト映像を制作しました。
 
 映像制作を担当する部門の長だったため、全体の進捗の管理も行いました。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LkBgIH3li3s?si=AuMnWiHn6SYMb4Hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/LkBgIH3li3s?si=AuMnWiHn6SYMb4Hw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 担当部分
 
