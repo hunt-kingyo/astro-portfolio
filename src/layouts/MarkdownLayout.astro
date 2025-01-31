@@ -16,11 +16,13 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-    <div class="prose prose p-6">
-        <h1>{frontmatter.title}</h1>
-        <h3 class="mb-6">{frontmatter.from +  (frontmatter.to? " - " + frontmatter.to : "") + " | "}{frontmatter.description}</h3>
-        <slot />
-        <a href="/" class="btn btn-primary mt-10">戻る</a>
+    <div class="flex justify-center ">
+        <div class="prose prose p-6">
+            <h1>{frontmatter.title}</h1>
+            <h3 class="mb-6">{frontmatter.from +  (frontmatter.to? " - " + frontmatter.to : "") + " | "}{frontmatter.description}</h3>
+            <slot />
+            <a href="/" class="btn btn-primary mt-10">戻る</a>
+        </div>
     </div>
     <div class="divider"></div>
 </Layout>
