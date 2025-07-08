@@ -18,7 +18,7 @@ const posts: Post[] = Object.values(import.meta.glob('../pages/works/*.md', { ea
   }));
 ---
 
-<div class="px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="px-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
     {posts.map((post) => (
       <div class="card bg-base-100 shadow-xl">
         <div class="card-body">
