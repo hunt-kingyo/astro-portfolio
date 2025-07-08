@@ -29,7 +29,7 @@ description: "映像制作"
 
 ### 冒頭のロゴアニメーション
 
-<video controls autoplay loop assets controlslist="nodownload" src="/assets/50th_logo_animation.mp4"></video>
+<video controls autoplay loop muted assets controlslist="nodownload" src="/assets/50th_logo_animation.mp4"></video>
 
 このロゴアニメーションは雙峰祭当日に行われたステージの生配信でもトランジションとして使用されました。
 
@@ -37,7 +37,7 @@ DaVinci Resolve Fusionを使用して制作しました。
 
 ### 末尾のロゴアニメーション
 
-<video controls autoplay loop assets controlslist="nodownload" src="/assets/sohosai_logo_animation.webm"></video>
+<video controls autoplay loop muted assets controlslist="nodownload" src="/assets/sohosai_logo_animation.webm"></video>
 
 このロゴアニメーションは2023年の10月に制作したもので、昨年度の雙峰祭のステージの生配信ではトランジションとして使用されたほか、筑波大学学園祭実行委員会が制作したいくつかの映像でも使用されました。
 

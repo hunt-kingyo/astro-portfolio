@@ -41,7 +41,7 @@ LUMIX G9 PRO、LUMIX G12-60 F3.5-5.6を用いて撮影しました。
 
 ### ロゴアニメーション制作
 
-<video controls autoplay loop assets controlslist="nodownload" src="/assets/CafeOre_Logo_3s_gv_libvpx.webm"></video>
+<video controls autoplay loop muted assets controlslist="nodownload" src="/assets/CafeOre_Logo_3s_gv_libvpx.webm"></video>
 
 ロゴの中心にコーヒーを淹れる際に使用するドリップポットから湯気が出ている様子が描かれていたため、パーティクルやアニメーションを使用してそのイメージをより強めることを目標として制作を行いました。
 
